@@ -33,14 +33,25 @@ data_thumb2pinky = pd.read_csv('data/'+ "ThumbtoPinky1_NormalSetUp.csv")
 # normal set up  - rest
 data_rest = pd.read_csv('data/'+ "restKai_normalSetUp.csv")
 
+# normal set up - longer flexions 
+data_longer = pd.read_csv('data/'+"LongerFlexionKai_NormalSetUp.csv")
+
 plt.figure(figsize=(10, 6))
 #plt.plot(time[:len(data_4flexions)]/1000, data_4flexions, label="4 Flexions")
 #plt.plot(time[:len(data_2strong2light)]/1000, data_2strong2light, label="2 Strong 2 Light")
-plt.plot(time[:len(data_thumb2pinky)]/1000, data_thumb2pinky, label="Thumb to Pinky")
-plt.plot(time[:len(data_rest)]/1000, data_rest, label="Rest")
+#plt.plot(time[:len(data_thumb2pinky)]/1000, data_thumb2pinky, label="Thumb to Pinky")
+#plt.plot(time[:len(data_longer)]/1000, data_longer, label = "Longer Flexion")
+#plt.plot(time[:len(data_rest)]/1000, data_rest, label="Rest")
 plt.title("Comparison of Standard Set Up Signal")
 plt.xlabel("Time (s)")
 plt.ylabel("Signal Amplitude")
 plt.legend()
 plt.grid(True)
 plt.show()
+
+# -----------
+'''
+This code was used to plot different experimenst against the resting
+electromagnetic potential detected by surface EMG technology.
+'''
+# -----------
