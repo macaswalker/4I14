@@ -22,22 +22,20 @@ csv_files = [
 time = np.arange(0, 5000 * 2, 2)
 
 # normal set up - 4 flexions
-data_4flexions = pd.read_csv('data/'+ "wristKai_normalSetUp.csv")
-
-# normal set up  - rest
-data_rest = pd.read_csv('data/'+ "restKai_normalSetUp.csv")
+#data_4flexions = pd.read_csv('data/'+ "wristKai_normalSetUp.csv")
 
 # normal set up - two long two short
-data_2strong2light = pd.read_csv('data/'+ "TwoLightTwoStrong_NormalSetUp.csv")
+#data_2strong2light = pd.read_csv('data/'+ "TwoLightTwoStrong_NormalSetUp.csv")
 
 # normal set up - thumb to finger
 data_thumb2pinky = pd.read_csv('data/'+ "ThumbtoPinky1_NormalSetUp.csv")
 
-print(len(time))
-# Create a new figure for this plot
-#plt.figure(figsize=(10, 6))
-plt.plot(time[:len(data_4flexions)]/1000, data_4flexions, label="4 Flexions")
-plt.plot(time[:len(data_2strong2light)]/1000, data_2strong2light, label="2 Strong 2 Light")
+# normal set up  - rest
+data_rest = pd.read_csv('data/'+ "restKai_normalSetUp.csv")
+
+plt.figure(figsize=(10, 6))
+#plt.plot(time[:len(data_4flexions)]/1000, data_4flexions, label="4 Flexions")
+#plt.plot(time[:len(data_2strong2light)]/1000, data_2strong2light, label="2 Strong 2 Light")
 plt.plot(time[:len(data_thumb2pinky)]/1000, data_thumb2pinky, label="Thumb to Pinky")
 plt.plot(time[:len(data_rest)]/1000, data_rest, label="Rest")
 plt.title("Comparison of Standard Set Up Signal")
