@@ -1,9 +1,0 @@
-Metric,eBWell,eBWell (no extreme),TrueMatrix,TrueMatrix (no extreme),AccuChek,AccuChek (no extreme)
-MARD (%),69.51,65.24,25.61,23.78,32.13,18.82
-MAD (mmol/L),7.78,3.59,1.99,1.29,5.68,1.00
-Bias (mmol/L),-1.97,3.59,-1.94,-1.24,-5.68,-1.00
-R-squared,0.318,0.582,0.044,0.838,0.447,0.917
-Within ±15% (%),0.0,0.0,6.2,6.7,13.8,21.1
-Within ±0.83 mmol/L (%),6.7,6.7,5.6,5.6,50.0,50.0
-Clarke Zone A (%),4.8,5.9,41.2,42.4,73.7,89.4
-Parkes Zone A (%),4.8,5.9,41.2,42.4,73.7,89.4
